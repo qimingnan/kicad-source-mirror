@@ -108,7 +108,7 @@ const int maxSize = (int)( 250 * IU_PER_MM );
 
 DIALOG_LABEL_EDITOR::DIALOG_LABEL_EDITOR( SCH_EDIT_FRAME* aParent, SCH_TEXT* aTextItem ) :
     DIALOG_LABEL_EDITOR_BASE( aParent ),
-    m_textSize( aParent, m_textSizeLabel, m_textSizeCtrl, m_textSizeLabel, false, minSize, maxSize )
+    m_textSize( aParent, m_textSizeLabel, m_textSizeCtrl, m_textSizeUnits, false, minSize, maxSize )
 {
     m_Parent = aParent;
     m_CurrentText = aTextItem;
